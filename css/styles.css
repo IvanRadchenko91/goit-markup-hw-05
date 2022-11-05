@@ -117,8 +117,13 @@ img {
 	font-size: 14px;
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
-
 	color: var(--heder-mail-tel);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.heder-mail-icon {
+	fill: currentColor;
 }
 
 .heder-tel-link {
@@ -126,8 +131,13 @@ img {
 	font-size: 14px;
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
-
+	display: flex;
+	align-items: center;
+	gap: 10px;
 	color: var(--heder-mail-tel);
+}
+.heder-tel-icon {
+	fill: currentColor;
 }
 .heder-tel-link:hover,
 .heder-tel-link:focus,
@@ -144,10 +154,16 @@ img {
 
 /*  =========================MAIN=========================  */
 .main {
+	max-width: 1600px;
+	margin: 0px auto;
 	background-color: var(--main-background-color);
 	padding-top: 200px;
 	padding-bottom: 200px;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
+
 .main-title {
 	font-family: "Roboto";
 	font-weight: 900;
@@ -187,6 +203,14 @@ img {
 
 .secondary-list {
 	display: flex;
+}
+.secondary-block {
+	display: flex;
+	align-items: center;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+	padding: 25px 100px;
+	margin-bottom: 30px;
 }
 .secondary-list-item {
 	flex-basis: calc((100%-30px * 3) / 4);
@@ -247,6 +271,7 @@ img {
 .comanda-item-list {
 	background-color: #ffffff;
 	flex-basis: calc((100% - 30px * 3) / 4);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .comanda-sub-title {
 	font-weight: 500;
@@ -267,12 +292,64 @@ img {
 	text-align: center;
 	padding-bottom: 30px;
 }
+.social-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	fill: #afb1b8;
+}
+.social-link:hover {
+	background: #2196f3;
+	fill: #ffffff;
+}
+/* client */
+.client-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.client-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.client-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	background-color: #ffffff;
+	fill: #afb1b8;
+}
+.client-link:hover {
+	fill: #2196f3;
+	border-color: #2196f3;
+}
 
 /*  =========================MAIN=========================  */
 /*  =========================FOOTER=========================  */
 .address {
 	font-style: normal;
 }
+
 .footer {
 	background-color: var(--footer-background-color);
 	padding-top: 60px;
@@ -331,6 +408,40 @@ img {
 .footer-mail-link:focus {
 	color: var(--footer-mail-map-tel-link-focus-hover);
 }
+.footer-flex {
+	display: flex;
+	align-items: baseline;
+	gap: 70px;
+}
+.footer-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.footer-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+.footer-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	fill: #ffffff;
+}
+.footer-link:hover {
+	background: #2196f3;
+}
 /*  =========================FOOTER=========================  */
 /*  =========================MAIN PORTFOLIO=========================  */
 .main-list-btn {
@@ -344,6 +455,7 @@ img {
 	flex-wrap: wrap;
 	gap: 30px;
 }
+
 .portfolio-btn {
 	display: block;
 	cursor: pointer;
@@ -370,10 +482,16 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--portfolio-btn-color-hover-focus);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-item-list {
 	flex-basis: calc((100% - 30px * 2) / 3);
 }
+.portfolio-item-list:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	cursor: pointer;
+}
+
 .portfolio-title {
 	font-weight: 700;
 	font-size: 18px;
