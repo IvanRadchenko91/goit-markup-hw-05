@@ -66,7 +66,9 @@ img {
 	height: auto;
 }
 /*  =========================HEDER=========================  */
-
+.heder{
+	border: 1px solid #ECECEC;
+}
 .heder-conteiner {
 	display: flex;
 	align-items: center;
@@ -309,7 +311,8 @@ img {
 	background-color: #ffffff;
 	fill: #afb1b8;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 	background: #2196f3;
 	fill: #ffffff;
 }
@@ -339,10 +342,12 @@ img {
 	background-color: #ffffff;
 	fill: #afb1b8;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
 	fill: #2196f3;
 	border-color: #2196f3;
 }
+
 
 /*  =========================MAIN=========================  */
 /*  =========================FOOTER=========================  */
@@ -439,7 +444,8 @@ img {
 	background-color: rgba(255, 255, 255, 0.1);
 	fill: #ffffff;
 }
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
 	background: #2196f3;
 }
 /*  =========================FOOTER=========================  */
