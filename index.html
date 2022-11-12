@@ -60,7 +60,7 @@
 			<section class="main">
 				<div class="conteiner">
 					<h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-					<button type="button" class="main-btn">Замовити послугу</button>
+					<button type="button" class="heder-btn main-btn" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
 			<!-- secondary -->
@@ -116,12 +116,21 @@
 					<ul class="about-list list">
 						<li class="about-list-item">
 							<img src="./images/a-img-1.jpg" alt="Чим займаемося" width="370" height="294" />
+							<div class="overlay">
+								<p class="overlay-text">Десктопні додатки</p>
+							</div>
 						</li>
 						<li class="about-list-item">
 							<img src="./images/a-img-2.jpg" alt="Чим займаемося" width="370" height="294" />
+							<div class="overlay">
+								<p class="overlay-text">Мобільні додатки</p>
+							</div>
 						</li>
 						<li class="about-list-item">
 							<img src="./images/a-img-3.jpg" alt="Чим займаемося" width="370" height="294" />
+							<div class="overlay">
+								<p class="overlay-text">Дизайнерські рішення</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -517,5 +526,18 @@
 			</div>
 		</footer>
 		<!-- =========================FOOTER========================= -->
+		<!-- =========================MODAL WINDOW========================= -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal" data-modal-window>
+				<button class="modal-btn" data-modal-close>
+					<svg class="modal-icon" width="11" height="11">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./modal.js"></script>
+
+		<!-- =========================MODAL WINDOW========================= -->
 	</body>
 </html>
